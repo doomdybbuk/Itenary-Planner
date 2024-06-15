@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import TaskInput from '../components/TaskInput';
 import TaskList from '../components/TaskList';
-// import Navbar from '../components/Navbar'; // Import the Navbar component
+import Navbar from '../components/Navbar'; // Import the Navbar component
 import '../index.css'; // Assuming index.css is your main CSS file
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <div className="app">
-      {/* <Navbar /> Add the Navbar component here */}
+      <Navbar />
       <h1>Itinerary Planner</h1>
       <TaskInput addTask={addTask} />
       <TaskList tasks={tasks} updateTask={updateTask} deleteTask={deleteTask} />
